@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>User Panel</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="static/profileStyles.css">
+    </head>
+    <body>
+        <div class="buttons">
+            <a href="/discover"><button class="discover" id="chat">Chat and Discover</button></a>
+            <button class="profile" id="chat">Profile</button>
+        </div>
+        <p><big>Username : {{session["username"]}}</big></p>
+        <img src={{profilePhoto}} alt="">
+        <form action="/profile" method="post" enctype="multipart/form-data">
+            <p>Change profile photo</p>
+            <p><input type="file" name = "file" id="file"></p>
+            <p><a href="/remove-photo"><input type="button" value="Remove profile photo" style="cursor: pointer;"></a><p>
+            <p>Enter your email address to protect your account.</p>
+            {%if email == "empty"%}
+                <input type="text" name="email" placeholder="Enter your email address">
+            {%else%}
+                <input type="text" name="email" placeholder={{email}}>
+            {%endif%}
+            <p>Change your password</p>
+            <input type="text" placeholder="Enter your new password" name="newpass">
+            <input type="text" placeholder="Submit your new password" name = "secondnewpass">
+            <p><input type="submit" value="Submit changes" style="cursor: pointer;"><p>
+        </form>
+        <a href="/logout"><button class = "logout">Log out</button></a>
+        <br><br>
+        <a href="/delete-account"><button class = "delete">Delete account</button></a>
+        {%for i in range(5)%}
+            <br>
+        {%endfor%}
+    </body>
+</html>

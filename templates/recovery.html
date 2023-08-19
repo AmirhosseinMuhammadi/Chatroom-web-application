@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Account recovery</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Restore your account</h1>
+        <form action="/recovery" method="post">
+            <input type="text" placeholder="Enter your email" name="email"><br>
+            <input type="submit" value="Send me my password">
+        </form>
+        <p>{{message}}</p>
+        <style>
+            h1{
+                text-align: center;
+            }
+            input{
+                width: 50%;
+                height: 5%;
+                margin-left: 25%;
+            }
+            p{
+                text-align: center;
+                color: tomato;
+            }
+        </style>
+    </body>
+</html>

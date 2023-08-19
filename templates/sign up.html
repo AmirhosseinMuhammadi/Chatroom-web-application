@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Sign up</title>
+        <link rel="stylesheet" href="static/signupStyles.css">
+    </head>
+    <body>
+        {%for i in range(8)%}
+            <br>
+        {%endfor%}
+        <h1>Create an account</h1>
+        <form action="/sign-up" method="post">
+            <input type="text" placeholder="Enter username or Email" name="username" required>
+            <p><input type="password" placeholder="Enter password" name="password" required></p>
+            <input type="submit" value="Sign up" class="button">
+        </form>
+        <a href="/login"><p>Already have an account? Sign in from here.</p></a>
+        <p style="text-align: center; color: tomato;">{{message}}</p>
+    </body>
+</html>

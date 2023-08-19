@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>User Panel</title>
+        <meta charset="utf-8">
+        <script src="https://cdn.socket.io/socket.io-3.0.1.min.js"></script>
+        <link rel="stylesheet" href="static/discoverStyles.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="static/socket.js">
+        </script>
+        <div class="buttons">
+            <button class="discover" id="chat">Chat and Discover</button>
+            <a href="/profile"><button class="profile" id="chat">Profile</button></a>
+        </div>
+        <ul id="messages"></ul>
+        <form onsubmit="sendMessage(); return false;">
+            <input type="text" name="chatbox" placeholder="Message" class="chatbox" id="messageInput">
+            <button type="submit" class="send_btn">Send</button>
+        </form>
+    </body>
+</html>
