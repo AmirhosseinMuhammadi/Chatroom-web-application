@@ -1,0 +1,66 @@
+body{
+    background-color: rgb(200, 247, 232);
+}
+.buttons{
+    width: 100%;
+    background-color: seagreen;
+}
+button{
+    background-color: seagreen;
+    color: aliceblue;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 50%;
+}
+button:hover{
+    background-color:teal;
+    color: aquamarine;
+}
+.discover{
+    width: 50%;
+}
+.profile{
+    margin-left: -4px;
+    background-color: teal;
+    color: aquamarine;
+}
+p{
+    color:teal;
+    text-align: center;
+}
+img{
+    width: 20%;
+    margin-left: 40%;
+}
+input{
+    width: 100%;
+    height: 5%;
+}
+.logout{
+    width: 100%;
+    background-color: royalblue;
+}.delete{
+    width: 100%;
+    background-color: tomato;
+}
+.logout:hover{
+    background-color:cornflowerblue;
+    color: aliceblue;
+}
+.delete:hover{
+    background-color:crimson;
+    color: aliceblue;
+}
+a{
+    text-decoration: none;
+}
+.followers{
+    position: absolute;
+    left: 35%;
+}
+.followings{
+    position: absolute;
+    left: 55%;
+}

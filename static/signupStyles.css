@@ -1,0 +1,22 @@
+form input{
+    width: 50%;
+    height: 5%;
+    margin-left: 25%;
+    font-size: large;
+}
+.button{
+    background-color:cornflowerblue;
+    color:aliceblue;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+a{
+    text-align: center;
+    text-decoration: none;
+    color:steelblue;
+}
+h1{
+    text-align: center;
+    color: steelblue;
+}

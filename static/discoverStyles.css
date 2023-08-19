@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(200, 247, 232);
+}
+.buttons{
+    width: 100%;
+    background-color: seagreen;
+}
+button{
+    background-color: seagreen;
+    color: aliceblue;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 50%;
+}
+button:hover{
+    background-color:teal;
+    color: aquamarine;
+}
+.discover{
+    background-color: teal;
+    color: aquamarine;
+    width: 50%;
+}
+.profile{
+    margin-left: -4px;
+}
+.chatbox{
+    width: 80%;
+    height: 5%;
+}
+.send_btn{
+    width: 19%;
+    height: 5%;
+}
+.user_message{
+    color:cornflowerblue;
+    font-family: "comic sans MS";
+    position: absolute;
+    left: 60px;
+}
+.user_image{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+}
